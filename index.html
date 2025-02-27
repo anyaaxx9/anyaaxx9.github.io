@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любимая Лапка | Зоомагазин и Ветклиника</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="parallax">
+        <div class="header-content">
+            <h1>Любимая Лапка</h1>
+            <p>Вашим питомцам здесь рады!</p>
+            <div class="cta-buttons">
+                <a href="#contacts" class="cta">Записаться к врачу</a>
+                <a href="#shop" class="cta secondary">В магазин</a>
+            </div>
+        </div>
+    </header>
+
+
+     <!-- Домашняя (главная) -->
+     <section id="home" class="section">
+        <div class="container">
+            <h2>Добро пожаловать в Любимую Лапку!</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>Лучшие товары</h3>
+                    <p>Более 5000 товаров для ваших питомцев</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Ветеринары 24/7</h3>
+                    <p>Круглосуточная помощь специалистов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Магазин -->
+      <section id="shop" class="section bg-light">
+        <div class="container">
+            <h2>Наш магазин</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" onclick="filterProducts('all')">Все</button>
+                <button class="filter-btn" onclick="filterProducts('food')">Корма</button>
+                <button class="filter-btn" onclick="filterProducts('toy')">Игрушки</button>
+                <button class="filter-btn" onclick="filterProducts('vet')">Уколы</button>
+            </div>
+            <div class="products-grid">
+                <!-- Товары будут добавляться через JavaScript -->
+            </div>
+        </div>
+    </section>
+<!--
+    <nav class="sticky">
+        <a href="#home" class="active"><i class="fas fa-home"></i></a>
+        <a href="#shop"><i class="fas fa-shopping-basket"></i> Магазин</a>
+        <a href="#clinic"><i class="fas fa-clinic-medical"></i> Клиника</a>
+        <a href="#contacts"><i class="fas fa-phone-alt"></i> Контакты</a>
+    </nav>
+-->
+
+<!-- Добавьте больше услуг -->
+
+    <main>
+        <!-- Остальные секции остаются аналогичными предыдущей версии -->
+        <!-- Добавим новую секцию с галереей -->
+        <section id="gallery">
+            <h2>Наши пациенты</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('./img/photo_1_2025-02-27_23-35-53.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('./img/photo_4_2025-02-27_23-35-53.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('./img/photo_5_2025-02-27_23-35-53.jpg')"></div>
+            </div>
+        </section>
+    
+    
+    
+
+           <!-- Контакты -->
+           <section id="contacts" class="section bg-dark">
+            <div class="container">
+                <h2>Контакты</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>г. Москва, ул. Пушкинская, 15</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor..." 
+                                width="100%" 
+                                height="400" 
+                                frameborder="0">
+                        </iframe>
+                    </div>
+                    <form class="contact-form">
+                        <h3>Онлайн-запись</h3>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <select>
+                            <option>Выберите услугу</option>
+                            <option>Консультация</option>
+                            <option>Вакцинация</option>
+                        </select>
+                        <div class="wrapper">
+                            <a href="#"><span>Отправить!</span></a>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+    
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
